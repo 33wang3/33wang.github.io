@@ -106,7 +106,7 @@ h1 {
 
 /* Wangobot Image, Subtitle, and Description */
 .wangobot-image {
-    width: 300px;
+    width: 250px;
     height: auto;
     display: block;
     margin: 0 auto 0.5rem auto; /* Centered with a margin below */
@@ -116,7 +116,7 @@ h1 {
     text-align: center;
     font-size: 1.2rem;
     color: #000; /* Black text */
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     font-weight: 350;
 }
 
@@ -129,13 +129,14 @@ h1 {
 
 /* Start Chatting Button */
 .left-section {
+    margin-top: 10rem;
     text-align: center;
 }
 
 .left-section .btn {
     display: inline-block;
     padding: 0.75rem 1.5rem;
-    width: 20rem;
+    width: 15rem;
     background-color: #fff; /* White background */
     color: #000; /* Black text */
     font-size: 1rem;
@@ -288,7 +289,7 @@ h1 {
 }
 
 .publication-title a {
-    color: #1a7a50; /* Green color for the title links */
+    color: #1a547a; /* Green color for the title links */
     text-decoration: none;
     font-size: 1rem;
     font-weight: 600;
@@ -327,3 +328,37 @@ h1 {
 .download-btn:hover {
     background-color: #e0e0e0;
 }
+
+.publication-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align button with the top of details */
+}
+
+.abstract-btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: light;
+  background-color: #f4f4f4;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.abstract-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.abstract-content {
+  display: none; /* Initially hidden */
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background-color: #f9f9f9;
+  border-left: 3px solid #1a7a50; /* Green border for emphasis */
+  font-size: 0.9rem;
+  color: #555;
+  border-radius: 4px;
+}
+

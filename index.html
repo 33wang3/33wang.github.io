@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header>
@@ -30,7 +31,7 @@
       <div class="content-wrapper">
         <div class="left-section">
           <!-- Image and Subtitle for W(ang)OBOT -->
-          <img src="assets/bot.png" alt="Wangobot" class="wangobot-image" />
+          <img src="assets/bot.jpg" alt="Wangobot" class="wangobot-image" />
           <p class="wangobot-subtitle">W(ang)OBOT</p>
 
           <!-- Single Start Chatting Button -->
@@ -60,28 +61,58 @@
       <!-- Journal Papers Section -->
       <div class="publication-category">
         <h2>Journal Papers</h2>
+        <!-- Journal Paper 1 -->
         <div class="publication-item">
           <div class="publication-details">
             <p class="publication-title">
-              <a href="link-to-journal-paper.pdf" target="_blank"
-                >Children as creators, thinkers and citizens in an AI-driven
-                future.</a
+              <a
+                >Decoding HPV vaccine discourse: A ChatGPT-driven health belief
+                analysis on social media.</a
               >
             </p>
             <p class="publication-authors">
-              Safinah Ali, Daniella DiPaola, Irene Lee, Victor Sindato, Grace
-              Kim, Ryan Blumofe, Cynthia Breazeal
+              Wang, J., Lian, J., Xu, L., & Lokmanoglu, A. D. (2025).
             </p>
             <p class="publication-details-text">
-              Computers and Education: Artificial Intelligence
+              Communication Methods and Measures. Manuscript under review.
             </p>
+            <div class="abstract-content">
+              <p>
+                Introduces an innovative methodology combining a GPT-driven
+                health belief model with supervised machine learning.
+              </p>
+            </div>
           </div>
-          <a
-            href="link-to-journal-paper.pdf"
-            class="download-btn"
-            target="_blank"
-            >Download</a
-          >
+          <button class="abstract-btn" onclick="toggleAbstract(this)">
+            Abstract
+          </button>
+        </div>
+
+        <!-- Journal Paper 2 -->
+        <div class="publication-item">
+          <div class="publication-details">
+            <p class="publication-title">
+              <a
+                >Don’t Browse It, Experience It: Spatial Presence Mediated the
+                Effect of 3D Marketing Websites.</a
+              >
+            </p>
+            <p class="publication-authors">
+              Yang, J., Wang, J., Wang, Y., & Lin, J. (2025).
+            </p>
+            <p class="publication-details-text">
+              Computers in Human Behavior. Manuscript under review.
+            </p>
+            <div class="abstract-content">
+              <p>
+                An experimental study on how spatial presence mediates the
+                effects of 3D marketing websites on user engagement.
+              </p>
+            </div>
+          </div>
+          <button class="abstract-btn" onclick="toggleAbstract(this)">
+            Abstract
+          </button>
         </div>
       </div>
 
@@ -91,26 +122,110 @@
         <div class="publication-item">
           <div class="publication-details">
             <p class="publication-title">
-              <a href="link-to-conference-paper.pdf" target="_blank"
-                >A Picture is Worth a Thousand Words: Co-designing Text-to-Image
-                Generation Learning Materials for K-12 with Educators</a
+              <a
+                >From Digital Group Game to Deeper Bonds: Enhancing
+                Self-Disclosure Capability through StEMory and the Envisioned
+                Role of Social Robots.</a
               >
             </p>
             <p class="publication-authors">
-              Safinah Ali, Prerna Ravi, Katherine Moore, Cynthia Breazeal, Hal
-              Abelson
+              Wang, J., Alghowinem, S.,... & Breazeal, C. (2025).
             </p>
             <p class="publication-details-text">
-              Proceedings of Educational Advances in Artificial Intelligence
-              (EAAI-24)
+              Proceedings of ACM CSCW '28. Under review.
             </p>
+            <div class="abstract-content">
+              <p>
+                A mixed-method study on the impact of imagery stimulated
+                emotional game intervention, supported by the Emotion-Memory
+                Cognitive Model and Social Penetration Theory.
+              </p>
+            </div>
           </div>
-          <a
-            href="link-to-conference-paper.pdf"
-            class="download-btn"
-            target="_blank"
-            >Download</a
-          >
+          <button class="abstract-btn" onclick="toggleAbstract(this)">
+            Abstract
+          </button>
+        </div>
+
+        <!-- Conference Paper 2 -->
+        <div class="publication-item">
+          <div class="publication-details">
+            <p class="publication-title">
+              <a
+                >Designing Social Robots to Facilitate Social-Emotional Skills
+                in Interactive Games.</a
+              >
+            </p>
+            <p class="publication-authors">
+              Wang, J., Alghowinem, S.,... & Breazeal, C. (2025).
+            </p>
+            <p class="publication-details-text">
+              ICA '75. Extended abstract under review.
+            </p>
+            <div class="abstract-content">
+              <p>
+                A participatory design study exploring the educational,
+                therapeutic, and facilitator roles of social robots in social
+                emotional game interventions.
+              </p>
+            </div>
+          </div>
+          <button class="abstract-btn" onclick="toggleAbstract(this)">
+            Abstract
+          </button>
+        </div>
+
+        <!-- Conference Paper 3 -->
+        <div class="publication-item">
+          <div class="publication-details">
+            <p class="publication-title">
+              <a
+                >Self-Disclosure in Virtual Agents: How Self-Disclosure in
+                Digital Companions Touches Our Emotional Engagement through
+                Content and Modality.</a
+              >
+            </p>
+            <p class="publication-authors">Wang, J., Sun, Y. (2025).</p>
+            <p class="publication-details-text">
+              ICA '75. Manuscript under review.
+            </p>
+            <div class="abstract-content">
+              <p>
+                An experiment using GSR (Galvanic Skin Response) and PPG
+                (Photoplethysmography) measurements to assess participants’
+                emotional responses and cognitive load during interactions with
+                varying levels of self-disclosure in virtual agents.
+              </p>
+            </div>
+          </div>
+          <button class="abstract-btn" onclick="toggleAbstract(this)">
+            Abstract
+          </button>
+        </div>
+
+        <!-- Conference Paper 4 -->
+        <div class="publication-item">
+          <div class="publication-details">
+            <p class="publication-title">
+              <a
+                >A War-Narrative of Covid-19 on Social Media: Leadership,
+                Individual Sacrifice, and Emotion.</a
+              >
+            </p>
+            <p class="publication-authors">Wang, J. (2022).</p>
+            <p class="publication-details-text">
+              Society Must Be Inoculated Conference. Paper presented.
+            </p>
+            <div class="abstract-content">
+              <p>
+                A large-scale text analysis examining propaganda and public
+                emotion during the COVID-19.
+              </p>
+            </div>
+          </div>
+          <button class="abstract-btn" onclick="toggleAbstract(this)">
+            Abstract
+          </button>
         </div>
       </div>
     </section>
