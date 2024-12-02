@@ -309,26 +309,15 @@ h1 {
 .publication-details-text {
     font-size: 0.9rem;
     color: #777;
+    margin-bottom: 0.5rem;
+}
+
+.publication-keywords {
+    font-size: 0.9rem;
+    color: #1a547a;
     margin-bottom: 0;
 }
 
-.download-btn {
-    padding: 0.5rem 1rem;
-    background-color: #f4f4f4;
-    color: #333;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 0.9rem;
-    text-decoration: none;
-    text-align: center;
-    white-space: nowrap;
-    transition: background-color 0.3s;
-    align-self: center; /* Aligns button to the middle */
-}
-
-.download-btn:hover {
-    background-color: #e0e0e0;
-}
 
 .publication-item {
   display: flex;
@@ -363,3 +352,113 @@ h1 {
   border-radius: 4px;
 }
 
+.std-btn {
+    padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: light;
+  background-color: #f4f4f4;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.std-btn:hover {
+    background-color: #e0e0e0;
+}
+
+
+/* Activities Section */
+.activities-section {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  
+  .activities-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .activities-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Space between cards */
+    max-width: 1000px;
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .activity-card {
+    display: flex; /* Horizontal layout */
+    align-items: center; /* Align image and text vertically */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 1rem;
+    gap: 1.5rem; /* Space between image and text */
+  }
+  
+  .activity-card img {
+    width: 150px; /* Fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Slight rounding for aesthetic */
+  }
+  
+  .activity-text {
+    text-align: left;
+    flex: 1; /* Ensure text takes remaining space */
+  }
+  
+  .activity-text h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .activity-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+
+/* Contact Section */
+.contact-section {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  
+  .contact-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-container {
+    display: flex; /* Enables flexbox for horizontal alignment */
+    justify-content: center; /* Centers the items horizontally */
+    align-items: center; /* Vertically aligns the items */
+    gap: 3rem; /* Space between contact items */
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Space between icon and text */
+  }
+  
+  .contact-item img {
+    width: 32px;
+
+  }
+  
+  .contact-item a {
+    font-size: 1.2rem;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .contact-item a:hover {
+    color: #555;
+  }
