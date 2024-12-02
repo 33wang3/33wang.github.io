@@ -13,6 +13,7 @@
     font-weight: 400;
     letter-spacing: 0.1em;
     text-align: center;
+    margin-top: 3rem;
     margin-bottom: 10rem;
 }
 
@@ -21,8 +22,8 @@
 }
 
 .content-block h2 {
-    text-align: center;
-    font-size: 1.8rem;
+    text-align: left;
+    font-size: 1.5rem;
     font-weight: 600;
     color: #555;
     margin-bottom: 1rem;
@@ -69,4 +70,13 @@
     border-radius: 8px; /* Adds rounded corners for aesthetics */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     margin-top: 1rem;
+}
+
+.related-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #555;
+    margin-top: 10rem;
+    margin-bottom: 1rem;
 }
