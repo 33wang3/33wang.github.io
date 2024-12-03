@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wobot | Jessy Wang</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/projects/styles_proj.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo"><a href="/index.html">Jessy Wang</a></div>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/index.html#publications">PUBLICATIONS</a></li>
+          <li><a href="/index.html#projects">Projects</a></li>
+          <li><a href="/index.html#leadership">Leadership</a></li>
+          <li><a href="/index.html#contact">Contact</a></li>
+          <li><a href="/files/resume.pdf" target="_blank">CV</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="content-section">
+      <h1>W(ang)obot - A Conversational LLM Self-Introducing Agent</h1>
+
+      <section id="content-section" class="image-section">
+        <img
+          src="/assets/project_pics/Wobot/hobbies.jpg"
+          alt="Wobot in Action"
+          class="user-image"
+        />
+
+        <p>Wobot in Action</p>
+      </section>
+
+      <div class="content-block">
+        <h2>Personal Social Robot Built on a Multi-Layered Model</h2>
+        <p>
+          This project involves the creation of a social robot designed to act
+          as a digital representation of myself, incorporating advanced Natural
+          Language Processing (NLP) techniques and a multi-layered response
+          system. The goal is to ensure that the chatbot not only delivers
+          accurate and detailed information but also reflects my tone, thoughts,
+          and personality as authentically as possible.
+        </p>
+      </div>
+
+      <div class="content-block">
+        <h2>Basic Tech Stack</h2>
+        <ul>
+          <li>Based on Large Language Models.</li>
+          <li>
+            Using LangChain to leverage both open source models and paid API
+            services to maximize performance.
+          </li>
+          <li>Using Streamlit for fast development and deployment.</li>
+          <li>
+            Layered Information Retrieval: A structured model that ensures
+            specificity and alignment in answers.
+          </li>
+          <li>
+            Knowledge Base Integration: Combining structured data (JSON) and
+            unstructured information (statements and prompts).
+          </li>
+        </ul>
+      </div>
+
+      <div class="content-block">
+        <h2>Three-Layer Model</h2>
+        <p>
+          To provide nuanced and personalized responses, the robot operates on a
+          three-layered model:
+        </p>
+
+        <h3>Layer 1: Prompt-Answer Matching</h3>
+        <ul>
+          <li>
+            The system quickly checks if the user’s query matches a pre-defined
+            prompt-answer pair using a rule-based NLP combined with a
+            lightweight classifier for prompt matching.
+          </li>
+          <li>
+            Matches user input to a curated set of prompt-answer pairs for fast
+            and accurate responses.
+          </li>
+        </ul>
+        <h3>Layer 2: Full Statement Access</h3>
+        <ul>
+          <li>
+            If no match is found, the system processes the query in the context
+            of a full personal statement containing all relevant background and
+            experience information, enabling broader and deeper responses.
+          </li>
+          <li>
+            <b>Purpose</b>: Generates nuanced and contextually rich answers when
+            Layer 1 cannot resolve the query.
+          </li>
+        </ul>
+        <h3>Layer 3: Database Retrieval</h3>
+
+        <ul>
+          <li>
+            If the query cannot be resolved in Layers 1 or 2, the system
+            accesses a database of structured data, including project details,
+            contact information, and academic papers. Integrating a structured
+            JSON database and optional full-text search (e.g., Elasticsearch).
+          </li>
+        </ul>
+      </div>
+
+      <section id="content-section" class="image-section">
+        <img
+          src="/assets/project_pics/Wobot/irrelated.jpg"
+          alt="Wobot in Action"
+          class="user-image"
+        />
+
+        <p>Wobot won't answer irrelated questions.</p>
+      </section>
+
+      <div class="content-block">
+        <h2>Purpose and Vision</h2>
+        <p>
+          The design ensures that users receive responses that are both specific
+          and reflective of my personal tone and perspective. By leveraging this
+          multi-layered approach, the social robot becomes a true digital
+          manifestation of me—representing my thoughts, personality, and values
+          as closely as possible. This project exemplifies how AI and
+          conversational systems can create deeply personalized digital
+          presences, enhancing connection and understanding in human-robot
+          interactions.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
