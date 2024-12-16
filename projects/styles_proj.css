@@ -89,3 +89,16 @@
     margin-top: 10rem;
     margin-bottom: 1rem;
 }
+
+/* for pdf */
+.pdf-container {
+    width: 70rem;
+    height: 40rem; /* Adjust as needed for desired height */
+    border: 1px solid #ccc;
+    margin: 20px auto 200px auto; /* Top, horizontal (auto centers), and bottom margins */
+  }
+
+  .pdf-wrapper {
+    text-align: center;
+  }
+  
